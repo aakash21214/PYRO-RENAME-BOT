@@ -3,7 +3,7 @@ Apache License 2.0
 Copyright (c) 2022 @PYRO_BOTZ
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
+in the Software without restriction, including wihout limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
@@ -26,9 +26,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "12916125")
+    API_HASH  = os.environ.get("API_HASH", "dfebf9cc52b859771cf8a1d447e751a5")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5923462655:AAGABmVO38Umc3c764Doh1u3mdpW5yv773w") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
@@ -37,12 +37,12 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1651746145').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001913986602") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
-    WEBHOOK = bool(os.environ.get("WEBHOOK", True))
+    WEBHOOK = bool(os.environ.get("WEBHOOK", False))
 
 
 
